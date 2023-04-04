@@ -22,8 +22,6 @@ class Side {
    * targetSide = [ [0, 0], [3, 3] ];
    */
   isCross(targetSide) {
-    // 位置情報の二頂点を通る直線が辺の線分を構成する二頂点と交差し、
-    // かつ辺の線分を通る直線が位置情報を構成する二頂点と交差するとき、二つの線分は交差する
     let cnt = 0;
     targetSide.vertices.forEach(vertice => {
       if (!isFinite(this.slope) || !isFinite(this.slice)) {
